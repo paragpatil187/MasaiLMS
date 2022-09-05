@@ -37,7 +37,11 @@ const formattedToday = yyyy +"-" + mm + "-" + dd;
 
   const getLectures = async () => {
     try {
+<<<<<<< HEAD
       const req = await fetch("");
+=======
+      const req = await fetch("");
+>>>>>>> 2129841acade4f2e7877ac4874a48ed8f3deb8f0
       const res = await req.json();
       setLectures(res.items);
     } catch (e) {
@@ -96,8 +100,12 @@ const formattedToday = yyyy +"-" + mm + "-" + dd;
                     <button>Details </button>
                   </div>
               </div> 
+<<<<<<< HEAD
           {/* {todayLecture.map((el)=>{ */}
           {lectures.map((el)=>{ 
+=======
+          {todayLecture.map((el)=>{
+>>>>>>> 2129841acade4f2e7877ac4874a48ed8f3deb8f0
             return(
               <div style={{backgroundColor:'#ffffff',Width:'90%',minHeight:'100px',border:'1px solid #E5E7EB',display:'flex',gap:'5px',alignItems:'center',justifyContent:'space-between'}}> 
                   <div style={{marginLeft:'15px',textAlign:'left'}} >
