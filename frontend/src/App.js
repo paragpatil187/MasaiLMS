@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Lectures from './components/Lectures';
 import Home from './components/Home';
 import Admin from './components/Admin';
+import Lecture_upload from './components/Lecture_upload';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home />} /> 
       <Route path='/lectures' element={<Lectures />} /> 
       <Route path='/admin' element={<Admin />} /> 
+      <Route path='/lecture_upload' element={<Lecture_upload />} /> 
 
       </Routes>
     </div>

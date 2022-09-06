@@ -101,8 +101,8 @@ const formattedToday = yyyy +"-" + mm + "-" + dd;
                   </div>
               </div> 
 
-          {/* {todayLecture.map((el)=>{ */}
-          {lectures.map((el)=>{ 
+           {todayLecture.map((el)=>{ 
+          
 
           
             return(
