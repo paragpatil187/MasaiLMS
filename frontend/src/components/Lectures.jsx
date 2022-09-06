@@ -5,7 +5,7 @@ const Lectures = () => {
   const [lectures, setLectures] = useState([]);
   const getLectures = async () => {
     try {
-      const req = await fetch("");
+      const req = await fetch("https://lmsbackend22.herokuapp.com/lecture");
       const res = await req.json();
       setLectures(res.items);
     } catch (e) {

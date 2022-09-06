@@ -38,7 +38,7 @@ const formattedToday = yyyy +"-" + mm + "-" + dd;
   const getLectures = async () => {
     try {
 
-      const req = await fetch("");
+      const req = await fetch("https://lmsbackend22.herokuapp.com/lecture");
 
       
 
