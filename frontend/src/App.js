@@ -8,6 +8,7 @@ import Admin from './components/Admin';
 import Lecture_upload from './components/Lecture_upload';
 import Assign_upload from './components/Assign_upload';
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/lecture_upload' element={<Lecture_upload />} /> 
       <Route path='/assignment_upload' element={<Assign_upload />} />
       <Route path='/login' element={<Login />} /> 
+      <Route path='/signup' element={<Signup />} />  
 
       </Routes>
     </div>
