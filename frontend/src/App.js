@@ -9,6 +9,7 @@ import Lecture_upload from './components/Lecture_upload';
 import Assign_upload from './components/Assign_upload';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Assignment from './components/Assignment';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Route path='/lecture_upload' element={<Lecture_upload />} /> 
       <Route path='/assignment_upload' element={<Assign_upload />} />
       <Route path='/login' element={<Login />} /> 
-      <Route path='/signup' element={<Signup />} />  
+      <Route path='/signup' element={<Signup />} />
+      <Route path='/assignments' element={<Assignment/>} />   
 
       </Routes>
     </div>
