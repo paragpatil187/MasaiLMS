@@ -18,8 +18,9 @@ const Navbar = ({user}) => {
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="admin">Admin </Link> </a></li>
                 {user?(<li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="login">Logout </Link> </a></li>):
                (<li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="login">Login </Link> </a></li>) }
-                {user?.email}
+                <p className='userName'>{user?.email}</p>
             </ul> 
+            
         </div>
         <div className='hamburger-menu'>
                  <a href='#' onClick = {()=>setShowMediaIcons(!showMediaIcons)}>
