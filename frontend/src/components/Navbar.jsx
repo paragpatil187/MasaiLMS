@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {GiHamburgerMenu} from "react-icons/gi"
 import './style/Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({user}) => {
     const [showMediaIcons, setShowMediaIcons] = useState(false)
   return (
     <div className='nav_container'>
@@ -17,6 +17,7 @@ const Navbar = () => {
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="assignments">Assignments </Link> </a></li>
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="admin">Admin </Link> </a></li>
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="login">Login </Link> </a></li>
+                <li>{user?.email}</li>
             </ul> 
         </div>
         <div className='hamburger-menu'>

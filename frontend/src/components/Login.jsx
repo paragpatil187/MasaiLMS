@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import {onAuthStateChanged, signInWithEmailAndPassword, signOut} from 'firebase/auth'
 import { auth } from './Firebase';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
  
 
-const Login = () => {
+const Login = ({childToParent}) => {
 
     const [registerEmail,setRegisterEmail] = useState('');
     const [registerPassword, setRegisterPassword] = useState('')
@@ -16,6 +17,7 @@ const Login = () => {
     onAuthStateChanged(auth,(currentUser)=>{
       setUser(currentUser)
     })
+    childToParent(user)
 
    
     const login = async () =>{
@@ -47,6 +49,7 @@ const Login = () => {
             <p style={{fontWeight:'600'}}>{user?.email}</p> 
             <button style={{backgroundColor:'black', borderRadius:'5px', padding:'5px 10px', color:'white', fontWeight:'bold', width:'fit-content', }} onClick={logout}>Sign Out</button>
           </div> 
+          
           <hr />
           <div>
             <p>Need to create account ? <span><Link style={{color:'green'}} to='/signup'>SIGN UP</Link></span></p>
@@ -55,6 +58,7 @@ const Login = () => {
       </div>
     </div>
   )
+  
 }
 
 export default Login
