@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const[user,setUser]=useState("")
   const childToParent = (childdata) => {
-    console.log("childdata",childdata)
+   // console.log("childdata",childdata)
     setUser(childdata)
    
   }
@@ -24,7 +24,7 @@ function App() {
 
   },[])
   
-  console.log("user",user?.email)
+  //console.log("user",user?.email)
   return (
     <div className="App">
       <Navbar user={user}/>
