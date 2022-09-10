@@ -13,7 +13,7 @@ const Navbar = ({user}) => {
         </div>
         <div className={showMediaIcons ? "menu-link mobile-menu-link":"menu-link"}>
             <ul>
-                <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="lectures">Lectures</Link> </a></li>
+                <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="lectures"><span>Lectures</span></Link> </a></li>
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="assignments">Assignments </Link> </a></li>
                 <li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="admin">Admin </Link> </a></li>
                 {user?(<li><a href="#"> <Link onClick = {()=>setShowMediaIcons(!showMediaIcons)} to="login">Logout </Link> </a></li>):
