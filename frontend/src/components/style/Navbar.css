@@ -20,9 +20,15 @@
  
  
 }
-.menu-link li{
+.menu-link ul li{
     color:#787E89;
     text-decoration: none;
+    font-weight: 500;
+    
+    
+}
+.menu-link ul li :hover{
+    background-color: rgb(245, 249, 249);
 }
 .menu-link ul{ 
     height: 65px;
