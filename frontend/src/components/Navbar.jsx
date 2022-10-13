@@ -5,7 +5,7 @@ import {GiHamburgerMenu} from "react-icons/gi"
 import './style/Navbar.css'
 
 const Navbar = ({user}) => {
-    const [showMediaIcons, setShowMediaIcons] = useState(false)
+    const [showMediaIcons, setShowMediaIcons] = useState(true)
   return (
     <div className='nav_container'>
         <div>
