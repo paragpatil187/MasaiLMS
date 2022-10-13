@@ -3,6 +3,7 @@ import {onAuthStateChanged, signInWithEmailAndPassword, signOut} from 'firebase/
 import { auth } from './Firebase';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import "./style/login.css"
  
 
 const Login = ({childToParent}) => {
@@ -35,13 +36,13 @@ const Login = ({childToParent}) => {
       await signOut(auth)
     }
   return (
-    <div style={{height:'100vh'}}> 
-      <div style={{display:'grid',gap:'10px',maxWidth:'600px', margin:'100px auto', backgroundColor:'#ffffff', borderRadius:'10px'}}>
+    <div className='maindiv' > 
+      <div className='borderdiv'>
            <br />
-          <div style={{display:'grid', justifyContent:'center'}}> 
-              <input style={{backgroundColor:'#E8F0FE', width:'400px', height:'35px', borderRadius:'5px', padding:'5px 20px'}} type="email" placeholder='Email...' onChange={(e)=>setLoginEmail(e.target.value)} />
+          <div className='inputdiv'> 
+              <input className='inputsx' type="email" placeholder='Email...' onChange={(e)=>setLoginEmail(e.target.value)} />
               <br />
-              <input style={{backgroundColor:'#E8F0FE', width:'400px', height:'35px', borderRadius:'5px', padding:'5px 20px'}} placeholder='Password...' onChange={(e)=>setLoginPassword(e.target.value)} />
+              <input className='inputsx'  placeholder='Password...' onChange={(e)=>setLoginPassword(e.target.value)} />
               <br />
               <button style={{backgroundColor:'black', borderRadius:'5px', padding:'5px 10px', color:'white', fontWeight:'bold', width:'fit-content', margin:'auto'}} onClick={login}>Login User</button>
           </div> 

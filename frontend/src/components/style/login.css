@@ -1,0 +1,20 @@
+.maindiv{
+    height:'100vh'
+}
+.borderdiv{display:'grid';
+    gap:'10px';
+    max-width:'600px'; 
+    margin:'100px auto';
+     background-color:'#ffffff'; 
+     border-radius:'10px'}
+.inputdiv{
+    display:'grid'; 
+        justify-content:'center'
+    }
+    .inputsx{
+        background-color:'#E8F0FE';
+         width:'400px'; 
+         height:'35px'; 
+         border-radius:'5px'; 
+         padding:'5px 20px';
+    }
