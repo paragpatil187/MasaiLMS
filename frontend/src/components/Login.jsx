@@ -44,11 +44,11 @@ const Login = ({childToParent}) => {
               <br />
               <input className='inputsx'  placeholder='Password...' onChange={(e)=>setLoginPassword(e.target.value)} />
               <br />
-              <button style={{backgroundColor:'black', borderRadius:'5px', padding:'5px 10px', color:'white', fontWeight:'bold', width:'fit-content', margin:'auto'}} onClick={login}>Login User</button>
+              <button className='loginbutton' onClick={login}>Login User</button>
           </div> 
           <div style={{display:"flex", alignItems:'center', justifyContent:'space-between', padding:'10px 50px'}}> 
             <p style={{fontWeight:'600'}}>{user?.email}</p> 
-            <button style={{backgroundColor:'black', borderRadius:'5px', padding:'5px 10px', color:'white', fontWeight:'bold', width:'fit-content', }} onClick={logout}>Sign Out</button>
+            <button className='loginbutton' onClick={logout}>Sign Out</button>
           </div> 
           
           <hr />

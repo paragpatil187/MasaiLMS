@@ -18,3 +18,11 @@
          border-radius:'5px'; 
          padding:'5px 20px';
     }
+    .loginbutton{background-color:'black';
+         border-radius:'5px';
+          padding:'5px 10px';
+           color:'white';
+            font-weight:'bold';
+             width:'fit-content';
+              margin:'auto'}
+    
